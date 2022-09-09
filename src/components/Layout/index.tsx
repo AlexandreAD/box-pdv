@@ -7,7 +7,10 @@ import * as s from './styled';
 
 import GlobalStyles from '../../styles/global';
 
-const Layout: React.FC = ({ children }) => (
+type Props = {
+  children?: React.ReactNode
+};
+const Layout: React.FC<Props> = ({ children }) => (
   <s.LayoutWrapper>
     <GlobalStyles />
     <MenuBar />

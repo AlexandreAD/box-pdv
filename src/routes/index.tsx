@@ -5,7 +5,8 @@ import Dashboard from '../pages/Dashboard';
 import Product from '../pages/Product';
 import About from '../pages/About';
 
-const Switch: React.FC = () => (
+
+const Routes: React.FC = () => (
   <Switch>
     <Route path="/" exact component={Dashboard} />
     <Route path="/product" component={Product} />
@@ -14,4 +15,4 @@ const Switch: React.FC = () => (
   </Switch>
 );
 
-export default Switch;
+export default Routes;
